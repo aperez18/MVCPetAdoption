@@ -15,5 +15,6 @@ namespace MVCPetAdoption.Models
         public string Location { get; set; }
         public bool IsShelter { get; set; }
         public List<Pet> Pets { get; set; }
+        //public List<Pet> Bookmarked { get; set; }
     }
 }

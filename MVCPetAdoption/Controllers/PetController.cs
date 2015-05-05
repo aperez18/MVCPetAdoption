@@ -46,9 +46,11 @@ namespace MVCPetAdoption.Controllers
         }
 
         // POST: /Pet/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="PetId,SpeciesId,Name,Breed,Age,Description,Diet,UserId")] Pet pet)
+        public ActionResult Create([Bind(Include="PetId,SpeciesId,Name,Breed,Age,Description,Diet,PetPictureUrl,UserId")] Pet pet)
         {
             if (ModelState.IsValid)
             {
@@ -80,9 +82,11 @@ namespace MVCPetAdoption.Controllers
         }
 
         // POST: /Pet/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="PetId,SpeciesId,Name,Breed,Age,Description,Diet,UserId")] Pet pet)
+        public ActionResult Edit([Bind(Include="PetId,SpeciesId,Name,Breed,Age,Description,Diet,PetPictureUrl,UserId")] Pet pet)
         {
             if (ModelState.IsValid)
             {
