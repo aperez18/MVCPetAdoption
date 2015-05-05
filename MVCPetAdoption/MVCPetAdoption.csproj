@@ -159,11 +159,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PetController.cs" />
     <Compile Include="DataContexts\PetDb.cs" />
-    <Compile Include="DataContexts\PetMigrations\201504271925289_InitialCreate.cs" />
-    <Compile Include="DataContexts\PetMigrations\201504271925289_InitialCreate.Designer.cs">
-      <DependentUpon>201504271925289_InitialCreate.cs</DependentUpon>
+    <Compile Include="DataContexts\PetMigrations\201505051812037_InitialCreate.cs" />
+    <Compile Include="DataContexts\PetMigrations\201505051812037_InitialCreate.Designer.cs">
+      <DependentUpon>201505051812037_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="DataContexts\PetMigrations\Configuration.cs" />
     <Compile Include="Global.asax.cs">
@@ -180,12 +182,29 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ImageResources\._best-friend-pet-adoption.jpg" />
+    <Content Include="Content\ImageResources\._Chihuahua-19.jpg" />
+    <Content Include="Content\ImageResources\._Eastern_box_turtle.jpg" />
+    <Content Include="Content\ImageResources\._flap_necked_chameleon.jpg" />
+    <Content Include="Content\ImageResources\._MaineCoonSilverTabby.jpg" />
+    <Content Include="Content\ImageResources\._puffer_fish_3084634b.jpg" />
+    <Content Include="Content\ImageResources\._White-Rabbit.jpg" />
+    <Content Include="Content\ImageResources\best-friend-pet-adoption.jpg" />
+    <Content Include="Content\ImageResources\Chihuahua-19.jpg" />
+    <Content Include="Content\ImageResources\Eastern_box_turtle.jpg" />
+    <Content Include="Content\ImageResources\flap_necked_chameleon.jpg" />
+    <Content Include="Content\ImageResources\MaineCoonSilverTabby.jpg" />
+    <Content Include="Content\ImageResources\placeholder.gif" />
+    <Content Include="Content\ImageResources\puffer_fish_3084634b.jpg" />
+    <Content Include="Content\ImageResources\White-Rabbit.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\ImageResources\.DS_Store" />
+    <Content Include="Content\ImageResources\._.DS_Store" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -223,9 +242,15 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Pet\Create.cshtml" />
+    <Content Include="Views\Pet\Delete.cshtml" />
+    <Content Include="Views\Pet\Details.cshtml" />
+    <Content Include="Views\Pet\Edit.cshtml" />
+    <Content Include="Views\Pet\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -235,8 +260,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DataContexts\PetMigrations\201504271925289_InitialCreate.resx">
-      <DependentUpon>201504271925289_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="DataContexts\PetMigrations\201505051812037_InitialCreate.resx">
+      <DependentUpon>201505051812037_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

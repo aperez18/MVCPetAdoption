@@ -13,7 +13,7 @@ namespace MVCPetAdoption.DataContexts.PetMigrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201504271925289_InitialCreate"; }
+            get { return "201505051812037_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

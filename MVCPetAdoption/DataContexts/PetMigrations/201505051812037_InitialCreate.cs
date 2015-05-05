@@ -18,6 +18,7 @@ namespace MVCPetAdoption.DataContexts.PetMigrations
                         Age = c.Int(nullable: false),
                         Description = c.String(),
                         Diet = c.String(),
+                        PetPictureUrl = c.String(),
                         UserId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.PetId)

@@ -17,6 +17,8 @@ namespace MVCPetAdoption.Models
         public int Age { get; set; }
         public string Description { get; set; }
         public string Diet { get; set; }
+        public string PetPictureUrl { get; set; }
+        [ScaffoldColumn(false)]
         public int UserId { get; set; }
         public virtual Species Species { get; set; }
         public virtual User User { get; set; }
