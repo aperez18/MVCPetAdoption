@@ -9,7 +9,7 @@ namespace MVCPetAdoption.DataContexts
 {
     public class IdentityDb : IdentityDbContext<ApplicationUser>
     {
-        public IdentityDb() : base("DefaultConnection") { }
+        public IdentityDb() : base("DefaultConnection", throwIfV1Schema:false) { }
 
         public static IdentityDb Create()
         {

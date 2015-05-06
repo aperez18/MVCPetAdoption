@@ -181,6 +181,14 @@
     <Compile Include="DataContexts\IdentityMigrations\201505060032159_UpdateAspNetUsers.Designer.cs">
       <DependentUpon>201505060032159_UpdateAspNetUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\201505062050431_IdentityShitStorm.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201505062050431_IdentityShitStorm.Designer.cs">
+      <DependentUpon>201505062050431_IdentityShitStorm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\201505062202193_UpdateIdentityModels.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201505062202193_UpdateIdentityModels.Designer.cs">
+      <DependentUpon>201505062202193_UpdateIdentityModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataContexts\IdentityMigrations\Configuration.cs" />
     <Compile Include="DataContexts\PetDb.cs" />
     <Compile Include="DataContexts\PetMigrations\201505051812037_InitialCreate.cs" />
@@ -289,6 +297,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataContexts\IdentityMigrations\201505060032159_UpdateAspNetUsers.resx">
       <DependentUpon>201505060032159_UpdateAspNetUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201505062050431_IdentityShitStorm.resx">
+      <DependentUpon>201505062050431_IdentityShitStorm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201505062202193_UpdateIdentityModels.resx">
+      <DependentUpon>201505062202193_UpdateIdentityModels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataContexts\PetMigrations\201505051812037_InitialCreate.resx">
       <DependentUpon>201505051812037_InitialCreate.cs</DependentUpon>
