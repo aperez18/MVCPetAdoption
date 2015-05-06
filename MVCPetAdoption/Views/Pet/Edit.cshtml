@@ -19,7 +19,7 @@
         @Html.HiddenFor(model => model.SpeciesId)
         @Html.HiddenFor(model => model.UserId)
         <div class="form-group">
-            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Name)
                 @Html.ValidationMessageFor(model => model.Name)
@@ -29,7 +29,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Breed, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Breed)
+                @Html.EditorFor(model => model.Breed, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Breed)
             </div>
         </div>

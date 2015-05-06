@@ -12,7 +12,7 @@ namespace MVCPetAdoption.DataContexts
         public PetDb() : base("DefaultConnection") { }
 
         public DbSet<Pet> Pets { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<ServiceUser> Users { get; set; }
         public DbSet<Species> Species { get; set; }
     }
 }

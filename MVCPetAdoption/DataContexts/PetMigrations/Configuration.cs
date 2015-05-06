@@ -28,16 +28,16 @@ namespace MVCPetAdoption.DataContexts.PetMigrations
                
             };
 
-            var users = new List<User>
+            var users = new List<ServiceUser>
             {
-                new User { Name = "Aaron Copland", Email="acopland@gmail.com", Location="adsd", IsShelter=false },
-                new User { Name = "Aaron Goldberg", Email="agoldberg@gmail.com", Location="adsd", IsShelter=false },
-                new User { Name = "Ryan Corbin", Email="rcorbin@gmail.com", Location="adsd", IsShelter=false },
-                new User { Name = "Aidan Mayes", Email="amayes@gmail.com", Location="adsd", IsShelter=false },
-                new User { Name = "Adrian Smith", Email="asmith@gmail.com", Location="adsd", IsShelter=false },
-                new User { Name = "Alex Woodward", Email="awoodward@gmail.com", Location="adsd", IsShelter=false },
-                new User { Name = "Aisha Tyler", Email="atyler@gmail.com", Location="adsd", IsShelter=false },
-                new User { Name = "Alanis Morissette", Email="amorissette@gmail.com", Location="adsd", IsShelter=false }
+                new ServiceUser { Name = "Aaron Copland", Email="acopland@gmail.com", Location="adsd", IsShelter=false },
+                new ServiceUser { Name = "Aaron Goldberg", Email="agoldberg@gmail.com", Location="adsd", IsShelter=false },
+                new ServiceUser { Name = "Ryan Corbin", Email="rcorbin@gmail.com", Location="adsd", IsShelter=false },
+                new ServiceUser { Name = "Aidan Mayes", Email="amayes@gmail.com", Location="adsd", IsShelter=false },
+                new ServiceUser { Name = "Adrian Smith", Email="asmith@gmail.com", Location="adsd", IsShelter=false },
+                new ServiceUser { Name = "Alex Woodward", Email="awoodward@gmail.com", Location="adsd", IsShelter=false },
+                new ServiceUser { Name = "Aisha Tyler", Email="atyler@gmail.com", Location="adsd", IsShelter=false },
+                new ServiceUser { Name = "Alanis Morissette", Email="amorissette@gmail.com", Location="adsd", IsShelter=false }
                 
             };
 

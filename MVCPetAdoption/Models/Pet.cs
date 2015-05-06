@@ -24,6 +24,6 @@ namespace MVCPetAdoption.Models
         [ScaffoldColumn(false)]
         public int UserId { get; set; }
         public virtual Species Species { get; set; }
-        public virtual User User { get; set; }
+        public virtual ServiceUser User { get; set; }
     }
 }

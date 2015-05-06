@@ -6,10 +6,10 @@ using System.Web;
 
 namespace MVCPetAdoption.Models
 {
-    public class User
+    public class ServiceUser
     {
         [ScaffoldColumn(false)]
-        public int UserId { get; set; }
+        public int ServiceUserId { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Location { get; set; }

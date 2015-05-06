@@ -7,7 +7,9 @@ using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using Owin;
 using MVCPetAdoption.Models;
 
 namespace MVCPetAdoption.Controllers
@@ -15,8 +17,10 @@ namespace MVCPetAdoption.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        private ApplicationUserManager _userManager;
+
         public AccountController()
-            : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
+            : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new IdentityDbContext())))
         {
         }
 
