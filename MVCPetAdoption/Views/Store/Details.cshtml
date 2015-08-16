@@ -1,0 +1,37 @@
+﻿
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@model MVCPetAdoption.Models.Pet
+
+@{
+    ViewBag.Title = "Species - " + Model.Species;
+}
+
+<h2> @Model.Name the @Model.Species.SpeciesName</h2>
+
+<div id="pet-details">
+  
+ 
+    <p>
+        <em>About @Model.Name:</em>
+        <br>
+        @Model.Description
+        <br />
+
+    </p>
+
+    <p class="button">
+        <div id="#draggable" class="ui-widget-content">
+             @Html.ActionLink("Add " + Model.Name + " to Your Wish List", "AddToCart", "ShoppingCart", new { id = Model.PetId }, "")
+        </div>
+    </p>
+    
+
+</div>
+<div>
+    @Html.ActionLink("Back to List of Species of Pets", "Index")
+</div>
+

@@ -1,0 +1,142 @@
+﻿/*.navbar-inverse {
+	background-color:#4A8567;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color:whitesmoke;
+	outline:thick;
+}
+
+.navbar-inverse .navbar-brand {
+	color:whitesmoke;
+	outline:thick;
+}
+
+.row{
+	border:thick;
+}
+
+
+
+.main-text
+{
+	position:relative;
+	top: 50px;
+	width: 96.66666666666666%;
+	color: #FFF;
+}
+
+
+
+
+.btn-min-block
+{
+	min-width: 170px;
+	line-height: 26px;
+}
+
+@media (max-width: 768px) {
+    body {
+   	 margin: 0;
+   	 padding: 0;
+    }
+}
+
+
+.list-group-item,
+.list-group-item:hover,
+.list-group-item:focus {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #A1E0C0;
+  border-color: #BE7E6A;
+}
+
+.list-group-item.active .list-group-item-heading,
+.list-group-item.active:hover .list-group-item-heading,
+.list-group-item.active:focus .list-group-item-heading {
+  color: inherit;
+}
+
+.list-group-item.active .list-group-item-text,
+.list-group-item.active:hover .list-group-item-text,
+.list-group-item.active:focus .list-group-item-text {
+  color: #e1edf7;
+}*/
+
+.slide-wrapper {
+    position: relative
+}
+
+.red {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.red-content {
+    width: 100%;
+    height: 300px;
+    background: none;
+    color:none;
+}
+@media (min-width: 768px) { 
+    .carousel-caption {
+        text-align: left;
+        padding-right: 300px;
+    }
+    .red {
+        width: 750px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        padding: 20px 0;
+        margin-left: -375px;
+    }
+    .red-content {
+        width: 300px;
+        float: right;
+        height: 100%;
+        background: none;
+        color: none;
+        margin-right:15px; /* width of .container gutter */
+    }
+}
+@media (min-width: 992px) { 
+    .red {
+        width: 970px;
+        margin-left: -485px;
+    }
+}
+@media (min-width: 1200px) { 
+    .red {
+        width: 1170px;
+        margin-left: -585px;
+    }
+}
+
+/* MISC */
+#homepage-feature .item {
+    overflow: hidden;
+    height: 400px;
+    background-color: transparent;
+    background-size: cover;
+}
+#homepage-feature > .carousel-control {
+    width: 30px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: none;
+    filter: none;
+    opacity: 1;
+}
+#homepage-feature > .carousel-control span {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+

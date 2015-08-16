@@ -1,0 +1,20 @@
+﻿
+
+@model IEnumerable<MVCPetAdoption.Models.Species>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Species of Pets</h2>
+<ul>
+    @foreach (var species in Model)
+    {
+        <li>@Html.ActionLink(species.SpeciesName, "Browse", new { species = species.SpeciesName })</li>
+    }
+</ul>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
